@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "player_head"
+      "id": "minecraft:player_head"
     },
     "title": "Decapitation",
     "description": "Explode a charged Creeper and drop a player head",
@@ -11,18 +11,9 @@
     "hidden": false
   },
   "parent": "mcpeachpies:root",
-  "rewards": {
-    "function": "mcpeachpies:decapitation_track"
-  },
   "criteria": {
-    "requirement": {
-      "trigger": "minecraft:entity_killed_player",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:creeper",
-          "nbt": "{powered:1b}"
-        }
-      }
+    "criteria": {
+      "trigger": "minecraft:impossible"
     }
   }
 }
